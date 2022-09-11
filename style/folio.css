@@ -1,0 +1,310 @@
+/*                  common part starts here               */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container{
+  width: 1170px;
+  margin: auto;
+}
+
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.icon{
+  font-size: 25px;
+  color: #02918c;
+}
+.subheading{
+  font-weight: 800;
+  color: #7e8287;
+  font-size: 16px;
+  margin: 20px 0;
+}
+.cardtext{
+  color: #7e8287;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 0 50px;
+}
+
+a{
+  text-decoration: none;
+}
+.button{
+  width: 196px;
+  height: 48px;
+  background-color: #cfc91d;
+  display: block;
+  margin: auto;
+  font-size: 14px;
+  font-weight: 800;
+  color: #0b1016;
+  text-transform: uppercase;
+  line-height: 48px;
+  letter-spacing: 5px;
+}
+.heading{
+  color: #02918c;
+  font-size: 46px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+.heading::after{
+  content: '';
+  width: 110px;
+  height: 10px;
+  background-image: url(../img/tag.webp);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+ul,ol{
+  list-style: none;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+/*                common part starts here            */             
+/*                   navbar starts here              */
+nav{
+  background-color: #02918b;
+}
+nav .logo{
+  width: 50%;
+}
+nav .menu{
+  width: 50%;
+}
+nav .menu ul{
+  text-align: right;
+}
+nav .menu ul li{
+  display: inline-block;
+}
+nav .menu ul li a{
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 26px 25px;
+  display: block;
+}
+/*                  navbar ends here                */
+/*                 banner starts here               */
+#banner {
+  height: 730px;
+  background-image: url(../img/banner.webp);
+  background-color: rgba(0, 0, 0, 0.34 );
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+#banner .bannercnt{
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+#banner .bannercnt h3{
+  font-weight: 400;
+  font-size: 30px;
+}
+#banner .bannercnt h1{
+  font-weight: 800;
+  font-size: 68px;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+}
+#banner .bannercnt p{
+  font-size: 18px;
+  font-weight: 400;
+}
+#banner .bannercnt img{
+  margin: 50px;
+}
+#banner .row{
+  height: 730px;
+}
+/*                  banner ends here               */
+/*                 about starts here               */
+#about{
+  padding: 98px 0;
+}
+#about .abouttext{
+  width: 883px;
+  margin: 70px auto 30px auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7e8287;
+}
+#about .abouttext span{
+  font-size: 23px;
+  font-weight: 800;
+  color: #7e8287;
+}
+#about .aboutcard{
+  width: 25%;
+  text-align: center;
+  border-right: 1px solid #d9dbdb;
+  padding: 40px 0;
+}
+#about .aboutcard:last-child{
+  border: none;
+}
+/*                 about ends here             */
+/*               service  starts here          */
+#service {
+  padding: 73px 0;
+  background-image: url(../img/bckcom.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.servicecard{
+  width: 50%;
+}
+#service .heading{
+  text-align: left;
+}
+#service .heading::after{
+  left: 0;
+  transform: translateX(0%);
+}
+.servicecard{
+  width: 50%;
+  padding: 10px 0;
+  
+}
+.servicecard p{
+  padding: 0;
+  padding-right: 80px;
+}
+.servicetext{
+  margin: 40px 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7e8287;
+}
+/*                  service ends here            */
+/*                 mywork  starts here          */
+#mywork{
+  padding: 90px 0;
+}
+#mywork .worktext{
+  width: 883px;
+  margin: 70px auto 30px auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7e8287;
+}
+#mywork .pic{
+  padding-top: 80px;
+}
+.workcard{
+  width: 25%;
+  position: relative;
+}
+.workcard img{
+  width: 100%;
+  display: block;
+}
+/*      mywork  ends  here    */
+/*     contactme starts here */
+#contactme p{
+width: 883px;
+margin: 70px auto 30px auto;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+color: #7e8287;
+}
+#contactme .contact{
+  padding: 40px 0;
+}
+/*                    contactme ends here                 */
+/*                mywork overlay starts here              */
+#mywork .workcard .overlay{
+  position: absolute;
+  inset: 20px;
+  background-color: rgba(2, 145, 140, 0.85);
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.4s;
+}
+#mywork .workcard:hover .overlay{
+  transform: scale(1);
+  opacity: 1;
+}
+.overlay .row{
+  height: 100%;
+}
+/*                 mywork overlay ends here            */
+/*                  contactform starts here            */
+#contactform{
+  padding: 65px 0;
+  background-color: #0a0a0b;
+}
+#contactform .form_input{
+  width: 640px;
+  margin: auto;
+}
+#contactform .form_input input{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  margin: 30px 0;
+}
+#contactform .form_textarea{
+  width: 925px;
+  margin: auto;
+  color: #7e8287;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+#contactform .form_textarea label{
+  display: block;
+  text-align: center;
+}
+#contactform .form_textarea textarea{
+  width: 100%;
+  height: 95px;
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin-top: 15px;
+  color: white;
+}
+.contactmail{
+  padding: 30px 0;
+  background-color: #000000;
+}
+.contactmail p{
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  color: #7e8287;
+}
+/*                       contactform ends here               */
